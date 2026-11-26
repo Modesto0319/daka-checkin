@@ -302,7 +302,7 @@
         </div>
         <div>
           <h1>每日题目打卡</h1>
-          <p>数学 · 信息科技 · 每周五天 · 点击格子即可打卡</p>
+          <p>数学 · 每周五天 · 点击格子即可打卡</p>
         </div>
       </div>
       <div class="today-chip"><span class="dot"></span><span id="todayText"></span></div>
@@ -317,7 +317,7 @@
       </div>
       <div class="segrow">
         <span class="seglabel">学科</span>
-        <div class="tabs" id="subjectTabs"></div>
+        <div class="tabs" id="subjectTabs" style="display:none"></div>
       </div>
     </div>
     <div class="weeknav">
@@ -462,8 +462,7 @@ const CLASSES = [
 ];
 
 const SUBJECTS = [
-  { key: 'math', name: '数学' },
-  { key: 'it', name: '信息科技' }
+  { key: 'math', name: '数学' }
 ];
 
 const view = { classKey: '82', subject: 'math', offset: 0, query: '', filter: 'all', absentDay: -1 };
